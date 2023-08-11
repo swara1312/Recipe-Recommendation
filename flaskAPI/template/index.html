@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <title>Recipes</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href=""><img src="LOGO1.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-bars" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href=""
+                            class="mainnav">HOME</a></li>
+                    <li><a href="" class="mainnav">COURSE</a>
+                        <div class="subnav">
+                            <ul>
+                                <li><a href="https://www.jamieoliver.com/recipes/category/course/breakfast/">Breakfast</a></li>
+                                <li><a href="https://www.jamieoliver.com/recipes/category/course/mains/">Mains</a></li>
+                                <li><a href="https://www.jamieoliver.com/recipes/category/course/desserts/">Desert</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="info"><a href="" class="mainnav">SPECIAL DIETS</a>
+                        <div class="subnav">
+                            <ul>
+                                <li><a href="https://www.jamieoliver.com/recipes/category/special-diets/vegan/">Vegan</a></li>
+                                <li><a href="https://www.jamieoliver.com/recipes/category/special-diets/vegetarian/">Vegetarian Ideas</a></li>
+                                <li><a href="https://www.jamieoliver.com/recipes/category/special-diets/gluten-free">Gluten-free</a></li>
+                                <li><a href="https://www.jamieoliver.com/recipes/category/special-diets/dairy-free/">Dairy-free</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="info"><a href="" class="mainnav">BAKING</a>
+                        <div class="subnav">
+                            <ul>
+                                <li><a href="https://www.jamieoliver.com/recipes/beautiful-baking/cookie/">Cookies</a></li>
+                                <li><a href="https://www.jamieoliver.com/recipes/beautiful-baking/bread-doughs/">Breads & Doughs</a></li>
+                                <li><a href="https://www.jamieoliver.com/recipes/beautiful-baking/cake/">Cakes</a></li>
+                                <li><a href="https://www.jamieoliver.com/recipes/beautiful-baking/gluten-free-cake/">Gluten-free Bakes</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="" class="mainnav">CONTACTS</a>
+                        <div class="subnav">
+                            <ul>
+                                <li><a href="mailto:swarasawant1312@gmail.com">Gmail</a></li>
+                                <li><a href="https://github.com/swara1312">Github</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class=" text-box">
+            <h1>Recipes that suit your needs !!</h1>
+            <p>Cooking is fun when you know how to go about it, with the ingredients you have.Here, we provide the recommended
+                recipes specially for you.</p>
+
+            <div class="search">
+                <form action="/recipe">
+                <input type="text" id="ingredients" name="ingredients"placeholder="Enter your ingredients... ">
+                <button type="submit" class="visit-btn">Give me
+                    recommendations!</button></form>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

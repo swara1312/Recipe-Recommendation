@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/css/result.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <title>Recommedations</title>
+  </head>
+  <body>
+    <div class = "all">
+    <section class="faves">
+      <h1>Recommedations</h1>
+      <p>
+        Unleash your inner chef and create magic in your kitchen.  Whether you're a seasoned chef or an aspiring home cook, our recommendations offer a world of gastronomic delights to explore and enjoy.
+      </p>
+
+      <div class="row">
+        {% for item in result %}
+        <div class="faves-col">
+          <h2 class="faves-title">{{ result[item].recipe }}</h2>
+          <p class="">Matching: {{ result[item].score }}%</p>
+            <a
+              href="{{ result[item].url }}"
+              target="_blank"
+              class="orgLink"
+              >View Recipe</a>  
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section>
+        <div class="footerInfo">
+            <div><h4>Try yourself</h4></div>
+            <div><h2>Enjoy Cooking</h2></div>
+            <div><a href="https://www.jamieoliver.com/recipes/" class="visit-btn">Browse more ..</a></div>
+        </div>
+    </section>
+</div>
+  </body>
+</html>
