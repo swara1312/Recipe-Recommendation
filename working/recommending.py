@@ -12,7 +12,7 @@ import unidecode
 import ast
 import nltk
 nltk.download('wordnet')
-from nltk.corpus import wordnet as wn
+from nltk.corpus import wordnet
 
 data = pd.read_csv('data/Parsed_allRecipe.csv')
 data1 = pd.read_csv('data/allRecipe.csv')
