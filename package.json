@@ -4,8 +4,7 @@
   "description": "This is a web application that utilizes Flask, Machine Learning, Tailwind CSS, HTML, and other technologies to provide recipe recommendations based on user preferences. The system aims to assist users in discovering new recipes and improving their cooking experience.",
   "main": "index.js",
   "scripts": {
-    "tw": "npx tailwindcss -o ./flaskAPI/static/css/main.css --watch",
-    "wb": "python flaskAPI/main.py"
+    "rrs": "python flaskAPI/main.py"
   },
   "keywords": [],
   "author": "",
