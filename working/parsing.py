@@ -6,6 +6,8 @@ import string
 import unidecode
 import csv
 from nltk.stem import WordNetLemmatizer
+nltk.download('wordnet')
+from nltk.corpus import wordnet
 
 recipe_df = pd.read_csv('data/allRecipe.csv')
 
