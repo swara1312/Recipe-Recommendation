@@ -5,6 +5,8 @@ The Python-based Recipe Recommendation System is an innovative solution that lev
 
 **Installation and Execution**
 
-1.Clone this repository
+1.Clone this repository 
+
 2.Install the required dependencies using : npm install
+
 3.To run type the following command : npm run rrs
